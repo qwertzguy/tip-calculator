@@ -1,27 +1,28 @@
-# Pre-work - *Name of App Here*
+# Pre-work - *Tip Calculator*
 
-**Name of your app** is a tip calculator application for iOS.
+**Tip Calculator** is a tip calculator application for iOS.
 
-Submitted by: **Your Name Here**
+Submitted by: **Gaspard van Koningsveld**
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [ ] Settings page to change the default tip percentage.
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [X] Settings page to change the default tip percentage.
 
 The following **optional** features are implemented:
-* [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] UI animations
+* [ ] Remembering the bill amount across app restarts (if <10mins): I think this is not useful as the natural app lifecycle can make that happen automatically in a more logical way (user didnt use app for a long time or user switched to many different apps or heavy apps).
+* [x] Using locale-specific currency and currency thousands separators.
+* [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] User can select number of people to splitting the bill and view price per person.
+- [x] The medium tip percentage is selected by default.
 
 ## Video Walkthrough 
 
@@ -37,7 +38,7 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 
 **Question 1**: "What are your reactions to the iOS app development platform so far? How would you describe outlets and actions to another developer? Bonus: any idea how they are being implemented under the hood? (It might give you some ideas if you right-click on the Storyboard and click Open As->Source Code")
 
-**Answer:** [Enter your answer here in a paragraph or two].
+**Answer:** 
 
 Question 2: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
 
