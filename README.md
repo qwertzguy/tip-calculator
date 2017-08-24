@@ -23,6 +23,7 @@ The following **additional** features are implemented:
 
 - [x] User can select number of people to splitting the bill and view price per person.
 - [x] The medium tip percentage is selected by default.
+- [x] UI auto-resizes to screen size (auto-layout with constraints properly set).
 
 ## Video Walkthrough 
 
