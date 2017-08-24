@@ -38,11 +38,14 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 
 **Question 1**: "What are your reactions to the iOS app development platform so far? How would you describe outlets and actions to another developer? Bonus: any idea how they are being implemented under the hood? (It might give you some ideas if you right-click on the Storyboard and click Open As->Source Code")
 
-**Answer:** 
+**Answer:**
+- I like it so far. I'm surprised by how much animation utilities and helpers there is in the default SDK: very different from any other UI framework I used in the past. However, while being able to add reference to UI objects and actions in the code by dragging with the mouse is convenient, there is no easy way to refactor them: rename, change action argument list. Same thing with storyboards, I had some trouble to rename it.
+- Outlets are reference to UI objects so you can call methods on them from your code. Actions are methods in your code that get called when some specified event happens to a UI element. They are a binding between your UI and your code.
+- They are implemented in the xml of the Storyboard through the `connections` xml element. Sub-elements for each binding type exist, such as `action` and `outlet`. They contain attributes such as the `property` and `selector` for defining which field or method in the class it should bind to and `destination` for defining the id of the UIView the binding should be done on. InterfaceBuilder generates ids for the different views automatically so they can be used in the `destination` attribute. When the view of the Storyboard gets initalized through parsing the XML, it calls the `addTarget` method of the views to make the binding happen.
 
 Question 2: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
 
-**Answer:** [Enter your answer here in a paragraph or two].
+**Answer:** 
 
 
 ## License
