@@ -45,7 +45,7 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 
 Question 2: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
 
-**Answer:** 
+**Answer:** You create a strong reference cycle in a closure by defining a class field with a closure as a value which itself references (uses) `self`. This is because when you use `self` inside the closure, the closure will transparently create a strong reference to `self` (instance of the defining class) and `self` has a strong reference to the closure because it is assigned to one of its fields.
 
 
 ## License
