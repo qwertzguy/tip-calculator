@@ -32,8 +32,7 @@ class MainViewController: UIViewController {
     }
 
     func fadeAndRevealIfNeeded(_ label: UILabel, viewShownToHidden: Bool) {
-        if ((label.text == " " && !viewShownToHidden) || label.text != " " && viewShownToHidden)
-        {
+        if ((label.text == " " && !viewShownToHidden) || label.text != " " && viewShownToHidden) {
             let animation = CATransition()
             animation.isRemovedOnCompletion = true
             animation.duration = 0.2
